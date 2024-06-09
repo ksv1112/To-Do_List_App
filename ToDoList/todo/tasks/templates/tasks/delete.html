@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #638CB8;
+        }
+
+        .center-column {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        .btn-cancel {
+            background-color: #d9534f;
+        }
+
+        .btn-cancel:hover {
+            background-color: #c9302c;
+        }
+
+        .btn-confirm {
+            background-color: #5cb85c;
+        }
+
+        .btn-confirm:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-column">
+        <p>Are you sure you want to delete "{{ item }}"?</p>
+        <a class="btn btn-cancel" href="{% url 'list' %}">Cancel</a>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input class="btn btn-confirm" type="submit" value="Confirm">
+        </form>
+    </div>
+</body>
+</html>
