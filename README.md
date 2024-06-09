@@ -158,7 +158,7 @@ This project is built using the following technologies:
 - [Django](https://www.djangoproject.com/)
 - [Docker](https://www.docker.com/)
 
-<br>
+<br> 
 
 ## Contributor 
 
