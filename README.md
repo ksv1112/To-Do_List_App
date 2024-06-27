@@ -35,7 +35,7 @@ This is a Dockerized To-Do List application built with Django. The application a
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/todo-list-app.git
+    git clone https://github.com/ksv1112/todo-list-app.git
     cd todo-list-app
     ```
 
