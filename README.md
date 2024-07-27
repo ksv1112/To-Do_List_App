@@ -92,7 +92,7 @@ Make sure Docker is installed on the other local machine. You can download and i
 Open a terminal or command prompt on the other local machine and use the following command to pull the Docker image from Docker Hub:
 
 ```bash
-docker pull <your_dockerhub_username>/django_todo_app:latest
+docker pull krutarth1112/django_todo_app:latest
 ```
 Replace `<your_dockerhub_username>` with your Docker Hub username.
 
