@@ -112,7 +112,7 @@ You should see the django_todo_app image listed among other images.
 Start a Docker container from the pulled image:
 
 ```bash
-docker run --name django_todo_app_remote -d -p 8000:8000 <your_dockerhub_username>/django_todo_app:latest
+docker run --name django_todo_app_remote -d -p 8000:8000 krutarth1112/django_todo_app:latest
 ```
 This command starts a Docker container named django_todo_app_remote from the pulled image and runs your Django application inside it.
 
